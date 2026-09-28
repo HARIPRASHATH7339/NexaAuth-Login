@@ -1,0 +1,63 @@
+.dashboard-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f7fb;
+  padding: 20px;
+}
+
+.dashboard-card {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 45px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #16a34a;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.dashboard-card h1 {
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.success-text {
+  color: #16a34a;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.user-info {
+  margin: 25px 0;
+  padding: 18px;
+  border-radius: 10px;
+  background: #f3f4f6;
+}
+
+.user-info p {
+  margin: 0 0 8px;
+  color: #6b7280;
+}
+
+.user-info strong {
+  color: #111827;
+}
+
+.dashboard-card button {
+  width: 100%;
+}

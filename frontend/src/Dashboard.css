@@ -1,63 +1,118 @@
-.dashboard-page {
+/* DASHBOARD PAGE */
+.dashboard {
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: #f4f7fb;
-  padding: 20px;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(
+    135deg,
+    #eef2ff 0%,
+    #f8fafc 100%
+  );
 }
 
+/* DASHBOARD CARD */
 .dashboard-card {
   width: 100%;
   max-width: 500px;
-  background: white;
   padding: 45px;
+  background: #ffffff;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
 }
 
-.success-icon {
+/* SUCCESS ICON */
+.dashboard-icon {
   width: 65px;
   height: 65px;
   margin: 0 auto 20px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   border-radius: 50%;
   background: #dcfce7;
   color: #16a34a;
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
+/* HEADING */
 .dashboard-card h1 {
-  margin-bottom: 10px;
+  margin: 0 0 10px;
   color: #111827;
+  font-size: 28px;
+  line-height: 1.3;
 }
 
-.success-text {
+/* SUCCESS MESSAGE */
+.success-message {
+  margin: 0;
   color: #16a34a;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
 }
 
-.user-info {
+/* USER BOX */
+.user-box {
   margin: 25px 0;
   padding: 18px;
   border-radius: 10px;
   background: #f3f4f6;
 }
 
-.user-info p {
+.user-box p {
   margin: 0 0 8px;
   color: #6b7280;
+  font-size: 14px;
 }
 
-.user-info strong {
+.user-box strong {
   color: #111827;
+  font-size: 15px;
 }
 
-.dashboard-card button {
+/* LOGOUT BUTTON */
+.logout-button {
+  display: block;
   width: 100%;
+  height: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.logout-button:hover {
+  background: #1f2937;
+  transform: translateY(-1px);
+}
+
+.logout-button:active {
+  transform: translateY(0);
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+  .dashboard {
+    padding: 20px 15px;
+  }
+
+  .dashboard-card {
+    padding: 30px 22px;
+    border-radius: 16px;
+  }
+
+  .dashboard-card h1 {
+    font-size: 24px;
+  }
 }
